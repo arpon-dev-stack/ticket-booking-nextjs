@@ -41,7 +41,7 @@ const Header = () => {
             <a
               key={link.name}
               href={link.path}
-              className='hover:text-blue-400 transition-colors'
+              className={`hover:text-blue-400 h-10 px-2 hover:outline hover:outline-white flex items-center justify-center transition-colors ${link.name === 'Sign In' && 'border bg-gray-600 border-white'} ${link.name === 'Sign Up' && 'border-white border'}`}
             >
               {link.name}
             </a>
