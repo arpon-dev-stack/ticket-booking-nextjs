@@ -4,7 +4,7 @@ import React from 'react';
 import { useState } from 'react';
 import { Eye, EyeClosed } from 'lucide-react';
 
-const Password = ({ state }) => {
+const Password = ({ state }: { state: string }) => {
   const [showPassword, setShowPassword] = useState(false);
   return (
     <div className=''>
@@ -27,9 +27,7 @@ const Password = ({ state }) => {
           )}
         </button>
       </div>
-      {state?.errors?.email && (
-        <p className='text-red-500 text-xs mt-1'>{state.errors.email}</p>
-      )}
+      {state && <p className='text-red-500 text-xs mt-1'>{state}</p>}
     </div>
   );
 };

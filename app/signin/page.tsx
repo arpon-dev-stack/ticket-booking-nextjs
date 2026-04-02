@@ -38,7 +38,7 @@ export default function RegisterForm() {
               {state.message}
             </p>
           )}
-          <Password state={state} />
+          <Password state={state?.errors?.email} />
 
           {/* Submit Button */}
           <button
