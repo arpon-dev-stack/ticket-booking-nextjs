@@ -6,13 +6,17 @@ export interface NavLink {
 
 export const visitorLinks: NavLink[] = [
   { name: 'Home', path: '/' },
-  { name: 'About Us', path: '/about' },
-  { name: 'Services', path: '/services' },
+  { name: 'Sign In', path: '/signin' },
+  { name: 'Sign Up', path: '/signup' },
 ];
 
 export const userLinks: NavLink[] = [
   { name: 'Home', path: '/' },
-  { name: 'Dashboard', path: '/dashboard' },
   { name: 'My Bookings', path: '/bookings' },
-  { name: 'Settings', path: '/settings' },
+  { name: 'profile', path: '/profile' },
+];
+
+export const adminLinks: NavLink[] = [
+  { name: 'Home', path: '/' },
+  { name: 'Dashboard', path: '/dashboard' },
 ];

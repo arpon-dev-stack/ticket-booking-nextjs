@@ -2,6 +2,7 @@ import Image from 'next/image';
 import bus from '../public/unnamed.png';
 import Link from 'next/link';
 import bus2 from '../public/bus-2.png';
+import Footer from './components/Footer';
 
 const page = () => {
   return (
@@ -15,8 +16,9 @@ const page = () => {
             alt='bus'
             className='w-full aspect-[16/9] object-cover'
           />
+          <div className='absolute inset-0 h-full w-full bg-gradient-to-t from-black/80 via-black/20 to-transparent'></div>
           <div className='absolute top-2/3 w-full left-1/2 -translate-1/2 flex flex-col items-center gap-5'>
-            <p className='text-[16px] sm:text-2xl font-semibold text-white backdrop-blur-3xl rounded-full px-2'>
+            <p className='text-[16px] sm:text-2xl font-semibold text-white'>
               Travel anywhere anytime in Bangladesh
             </p>
             <Link
@@ -62,11 +64,7 @@ const page = () => {
           />
         </div>
       </main>
-      <footer className='flex flex-col  py-10 px-3 sm:px-10 sm:py-20 bg-gray-600 gap-5'>
-        <span className='text-3xl font-semibold text-white'>Book Ticket</span>
-        <div></div>
-        <span>All Right Resurved</span>
-      </footer>
+      <Footer />
     </>
   );
 };
